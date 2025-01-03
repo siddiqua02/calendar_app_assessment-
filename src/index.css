@@ -1,0 +1,41 @@
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #007bff;
+  /* Navbar background color */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling for Links */
+nav a {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
+}
+
+nav a:active {
+  background-color: #003f7f;
+  transform: scale(0.98);
+  /* Slight shrink effect on click */
+}
+
+/* Space between Links */
+nav a:not(:last-child) {
+  margin-right: 10px;
+}
